@@ -25,7 +25,7 @@ Here $\lambda$ is another complex parameter. We can then compute the discriminan
 
 $$ \Delta(U, \lambda) = 16 \lambda^2 (U^4 + (-1 + \lambda)^2 - 2 U^2 (1 + \lambda))~. $$
 
-A question of interest is the following: <b> For what values of</b> $\lambda$ <b>will we see repeated roots? </b> While for this example the answer is simple, namely $\lambda = 1$, such solutions are not always so straightforward. The Manipulate[] function lets us visualize how these roots change on the complex $U$-plane, as we vary the parameter $\lambda$. Here, we use a parametrization $\lambda = \lambda_0 e^{2\pi i\, \frac{t_0}{24}}$, with $\lambda_0$ and $t_0$ real parameters. 
+A question of interest is the following: <b> For what values of</b> $\lambda$ <b>will we see repeated roots? </b> While for this example the answer is simple, namely $\lambda = 1$, such solutions are not always so straightforward. The Manipulate[] function lets us visualize how these roots change on the complex $U$-plane, as we vary the parameter $\lambda$. Here, we use a parametrization $\lambda = \lambda_0 e^{2\pi i \frac{t_0}{24}}$, with $\lambda_0$ and $t_0$ real parameters. 
 
 Running the code, we get something that looks like this:
 
