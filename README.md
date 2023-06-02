@@ -25,16 +25,22 @@ Here $\lambda$ is another complex parameter. We can then compute the discriminan
 
 $$ \Delta(U, \lambda) = 16 \lambda^2 (U^4 + (-1 + \lambda)^2 - 2 U^2 (1 + \lambda))~. $$
 
-The Manipulate[] function lets us visualize how these roots change on the complex $U$-plane, as we vary the parameter $\lambda$. Here, we use a parametrization $\lambda = \lambda_0 e^{2\pi i\, \frac{t_0}{24}}$, with $\lambda_0$ and $t_0$ real parameters. Running the code, we get something that looks like this:
+The Manipulate[] function lets us visualize how these roots change on the complex $U$-plane, as we vary the parameter $\lambda$. Here, we use a parametrization $\lambda = \lambda_0 e^{2\pi i\, \frac{t_0}{24}}$, with $\lambda_0$ and $t_0$ real parameters. 
+
+Running the code, we get something that looks like this:
 
 <p align="center">
   <img src="https://github.com/magurh/MathematicaManipulate/assets/122356566/cd1982e1-72e7-4f9b-a8a9-c4c831ee84c4">
 </p>
 
 
-### Example 2: Electrostatic potential
+### Example 2: Electric potential due to point charges
 
-A nice example from the Wolfram Documentation is that of the electrostatic potential for two point charges, where we can vary the strength of the two charges $q_1$ and $q_2$. The result of the code is shown below:
+A nice example from the Wolfram Documentation is that of the electrostatic potential for two point charges, where we can vary the strength of the two charges $q_1$ and $q_2$. The value of the potential (up to a multiplicative constant) at a point $(x,y)$ can be evaluated using:
+
+$$ V(x,y) = \frac{q_1}{|r_1 - r(x,y)|} + \frac{q_2}{|r_2 - r(x,y)|}~, $$
+
+where $r_i$ is the position vector of charge $i$, for $i = 1,2$ and $r(x,y)$ is the position vector for a point with coordinates $(x,y)$. The result of the code is shown below, where we draw lines of constant value. Note that the code is written in an interactive environment, which allows one to simply drag the charges to different positions, as well as change their magnitudes.
 
 <p align="center">
   <img src="https://github.com/magurh/MathematicaManipulate/assets/122356566/5e7279c1-9815-4d4b-b416-10f4eef792dc">
