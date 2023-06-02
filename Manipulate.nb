@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     24388,        629]
-NotebookOptionsPosition[     21809,        577]
-NotebookOutlinePosition[     22353,        596]
-CellTagsIndexPosition[     22310,        593]
+NotebookDataLength[     21610,        566]
+NotebookOptionsPosition[     19162,        517]
+NotebookOutlinePosition[     19706,        536]
+CellTagsIndexPosition[     19663,        533]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -44,8 +44,7 @@ Cell[TextData[{
      RowBox[{
       SubscriptBox["g", "3"], "[", 
       RowBox[{"U", ",", " ", "\[Lambda]"}], "]"}], " "}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "85b216fc-eeb2-4139-88e2-2a00482a794e"],
+  ExpressionUUID->"85b216fc-eeb2-4139-88e2-2a00482a794e"],
  "\n\n- For any fixed value of the parameters U and \[Lambda], this defines \
 an elliptic curve (i.e. a TORUS) with coordinates x, y. \n-  We define a \
 quantity called the \[OpenCurlyQuote]discriminant\[CloseCurlyQuote] of the \
@@ -61,9 +60,8 @@ curve ",
      RowBox[{"27", 
       SuperscriptBox[
        RowBox[{
-        SubscriptBox["g", "3"], "[", "U", "]"}], "2"]}]}]}], TraditionalForm]],
-  FormatType->TraditionalForm,ExpressionUUID->
-  "bf680dc8-8896-4179-8b38-1803a8737f6d"],
+        SubscriptBox["g", "3"], "[", "U", "]"}], "2"]}]}]}], 
+   TraditionalForm]],ExpressionUUID->"bf680dc8-8896-4179-8b38-1803a8737f6d"],
  ", and we are interested in the zeros of this function as we vary \[Lambda].\
 \n- For this simple example, we can solve this analytically. However, this is \
 not always the case. \n\nMathematica comes to the rescue with the \
@@ -296,8 +294,6 @@ Cell["Then we use the Manipulate function:", "Text",
   3.8945437198159323`*^9}},ExpressionUUID->"232d321c-c2c6-4375-8d89-\
 c312f99d49f0"],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", "\t", 
   RowBox[{
@@ -363,63 +359,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.822740140700584*^9, 3.8227401572638726`*^9}, 
    3.8236103289146643`*^9, {3.894543594180722*^9, 3.894543596249778*^9}, 
    3.8945436688414264`*^9, 3.8945437290640955`*^9},
- CellLabel->"In[2]:=",ExpressionUUID->"76acaecd-4a52-4194-be7c-63683e745eb3"],
-
-Cell[BoxData[
- TagBox[
-  StyleBox[
-   DynamicModuleBox[{$CellContext`t0$$ = 
-    17.050000000000004`, $CellContext`\[Lambda]0$$ = 1.0399999999999987`, 
-    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
-    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
-    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
-      Hold[$CellContext`\[Lambda]0$$], 0.1, 10}, {
-      Hold[$CellContext`t0$$], 0, 24}, {
-      Hold[
-       Dynamic[$CellContext`\[Lambda]]], Manipulate`Dump`ThisIsNotAControl}}, 
-    Typeset`size$$ = {306., {151., 154.99999999999994`}}, Typeset`update$$ = 
-    0, Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
-    DynamicBox[Manipulate`ManipulateBoxes[
-     1, StandardForm, 
-      "Variables" :> {$CellContext`t0$$ = 0, $CellContext`\[Lambda]0$$ = 0.1},
-       "ControllerVariables" :> {}, 
-      "OtherVariables" :> {
-       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
-        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
-        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
-         Typeset`skipInitDone$$}, "Body" :> ListPlot[
-        ComplexExpand[
-         ReplaceAll[{
-           Re[$CellContext`U], 
-           Im[$CellContext`U]}, 
-          
-          Solve[$CellContext`\[CapitalDelta]n[$CellContext`U, $CellContext`\
-\[Lambda]0$$ E^(I Pi ($CellContext`t0$$/12))] == 0, $CellContext`U]]], 
-        AxesOrigin -> {0, 0}, PlotRange -> {{-6, 6}, {-5, 5}}, ImagePadding -> 
-        40, AspectRatio -> 1, Frame -> True, 
-        FrameLabel -> {{Im, None}, {Re, "complex plane"}}, PlotStyle -> 
-        Directive[Red, 
-          PointSize[0.02]]], 
-      "Specifications" :> {{$CellContext`\[Lambda]0$$, 0.1, 
-         10}, {$CellContext`t0$$, 0, 24}, 
-        Dynamic[$CellContext`\[Lambda]]}, "Options" :> {}, 
-      "DefaultOptions" :> {}],
-     ImageSizeCache->{346., {220.06392818060704`, 224.93607181939296`}},
-     SingleEvaluation->True],
-    Deinitialization:>None,
-    DynamicModuleValues:>{},
-    SynchronousInitialization->True,
-    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
-    UnsavedVariables:>{Typeset`initDone$$},
-    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
-   Deployed->True,
-   StripOnInput->False],
-  Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{
-  3.894543669241378*^9, {3.8945437330621834`*^9, 3.8945437383612385`*^9}, {
-   3.8945446498691397`*^9, 3.894544667199767*^9}},
- CellLabel->"Out[2]=",ExpressionUUID->"67053594-9b1a-495c-b86a-11e668e7df64"]
-}, Open  ]]
+ CellLabel->"In[2]:=",ExpressionUUID->"76acaecd-4a52-4194-be7c-63683e745eb3"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -557,7 +497,7 @@ Cell[BoxData[
          3}, {{$CellContext`p$$, {{-1, 0}, {1, 0}}}, {-1, -1}, {1, 1}, 
          ControlType -> Locator}}, "Options" :> {Deployed -> True}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{352., {218.06392818060704`, 222.93607181939296`}},
+     ImageSizeCache->{352., {201.06392818060704`, 205.93607181939296`}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -597,37 +537,34 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 302, 5, 58, "Chapter",ExpressionUUID->"d90cc9ee-2f1b-4f3e-b72d-3d49e4e77ba1"],
-Cell[885, 29, 1869, 45, 185, "Text",ExpressionUUID->"caab04c8-b9ab-47bb-b0b4-121132c37318"],
+Cell[885, 29, 1808, 43, 185, "Text",ExpressionUUID->"caab04c8-b9ab-47bb-b0b4-121132c37318"],
 Cell[CellGroupData[{
-Cell[2779, 78, 229, 4, 27, "Subsubsection",ExpressionUUID->"85b4dada-417d-41f6-8a62-345d32241e9f"],
-Cell[3011, 84, 2510, 67, 164, "Input",ExpressionUUID->"103d324e-a912-45a5-8c72-6bcf06cd56b0"],
-Cell[5524, 153, 187, 3, 28, "Text",ExpressionUUID->"cf921d32-2c2c-441a-803c-67e180a1cb6c"],
+Cell[2718, 76, 229, 4, 27, "Subsubsection",ExpressionUUID->"85b4dada-417d-41f6-8a62-345d32241e9f"],
+Cell[2950, 82, 2510, 67, 164, "Input",ExpressionUUID->"103d324e-a912-45a5-8c72-6bcf06cd56b0"],
+Cell[5463, 151, 187, 3, 28, "Text",ExpressionUUID->"cf921d32-2c2c-441a-803c-67e180a1cb6c"],
 Cell[CellGroupData[{
-Cell[5736, 160, 249, 4, 34, "Input",ExpressionUUID->"bcabb344-f5cc-4626-9725-eea592e3e651"],
-Cell[5988, 166, 556, 15, 36, "Output",ExpressionUUID->"e8620dfb-2ac5-450c-9d3e-bfd3ca1396c2"]
+Cell[5675, 158, 249, 4, 34, "Input",ExpressionUUID->"bcabb344-f5cc-4626-9725-eea592e3e651"],
+Cell[5927, 164, 556, 15, 36, "Output",ExpressionUUID->"e8620dfb-2ac5-450c-9d3e-bfd3ca1396c2"]
 }, Open  ]],
-Cell[6559, 184, 242, 6, 28, "Text",ExpressionUUID->"879232d6-6a9e-4b05-a125-327defee16a1"],
+Cell[6498, 182, 242, 6, 28, "Text",ExpressionUUID->"879232d6-6a9e-4b05-a125-327defee16a1"],
 Cell[CellGroupData[{
-Cell[6826, 194, 334, 8, 33, "Input",ExpressionUUID->"a2655a96-afb9-4ec1-9a0a-7ad503fd0e3d"],
-Cell[7163, 204, 699, 22, 37, "Output",ExpressionUUID->"aabde911-2d2c-4ce0-b03d-6f364ef11171"]
+Cell[6765, 192, 334, 8, 33, "Input",ExpressionUUID->"a2655a96-afb9-4ec1-9a0a-7ad503fd0e3d"],
+Cell[7102, 202, 699, 22, 37, "Output",ExpressionUUID->"aabde911-2d2c-4ce0-b03d-6f364ef11171"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[7911, 232, 262, 4, 27, "Subsubsection",ExpressionUUID->"dffdb9eb-1ed4-46b4-8ef0-e09989eececb"],
-Cell[8176, 238, 1328, 32, 112, "Text",ExpressionUUID->"bd58036a-ce77-49b7-bb97-e6c60880795d"],
-Cell[9507, 272, 715, 19, 36, "Input",ExpressionUUID->"f31c28d6-093c-4b89-834c-61fcb7c1d167"],
-Cell[10225, 293, 182, 3, 28, "Text",ExpressionUUID->"232d321c-c2c6-4375-8d89-c312f99d49f0"],
-Cell[CellGroupData[{
-Cell[10432, 300, 2655, 65, 349, "Input",ExpressionUUID->"76acaecd-4a52-4194-be7c-63683e745eb3"],
-Cell[13090, 367, 2549, 53, 495, "Output",ExpressionUUID->"67053594-9b1a-495c-b86a-11e668e7df64"]
-}, Open  ]]
+Cell[7850, 230, 262, 4, 27, "Subsubsection",ExpressionUUID->"dffdb9eb-1ed4-46b4-8ef0-e09989eececb"],
+Cell[8115, 236, 1328, 32, 112, "Text",ExpressionUUID->"bd58036a-ce77-49b7-bb97-e6c60880795d"],
+Cell[9446, 270, 715, 19, 36, "Input",ExpressionUUID->"f31c28d6-093c-4b89-834c-61fcb7c1d167"],
+Cell[10164, 291, 182, 3, 28, "Text",ExpressionUUID->"232d321c-c2c6-4375-8d89-c312f99d49f0"],
+Cell[10349, 296, 2655, 65, 349, "Input",ExpressionUUID->"76acaecd-4a52-4194-be7c-63683e745eb3"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[15688, 426, 327, 5, 27, "Subsubsection",ExpressionUUID->"94a57c12-bbde-434e-994f-e799a5c34f0e"],
-Cell[16018, 433, 1212, 25, 146, "Text",ExpressionUUID->"ba937138-4293-487f-86b7-24036ca61859"],
+Cell[13041, 366, 327, 5, 27, "Subsubsection",ExpressionUUID->"94a57c12-bbde-434e-994f-e799a5c34f0e"],
+Cell[13371, 373, 1212, 25, 146, "Text",ExpressionUUID->"ba937138-4293-487f-86b7-24036ca61859"],
 Cell[CellGroupData[{
-Cell[17255, 462, 2051, 60, 150, "Input",ExpressionUUID->"17909f7c-1f7f-4d31-8fad-9995088901ca"],
-Cell[19309, 524, 2460, 48, 463, "Output",ExpressionUUID->"c60d3cff-6fcd-45ed-916e-fa7ae4f8b62e"]
+Cell[14608, 402, 2051, 60, 150, "Input",ExpressionUUID->"17909f7c-1f7f-4d31-8fad-9995088901ca"],
+Cell[16662, 464, 2460, 48, 429, "Output",ExpressionUUID->"c60d3cff-6fcd-45ed-916e-fa7ae4f8b62e"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
