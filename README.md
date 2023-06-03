@@ -17,8 +17,8 @@ $$ \Delta(U) = g_2(U)^3 - 27 g_3(U)^2~,$$
 and we are looking for the zeros of this function. In simple cases, these can be solved analytically, but this is not usually the case. The examples we will look at is the local Hirzebruch $\mathbb{F}_0$ geometry, which engineers a five-dimensional superconformal field theory. Explicitly, we have:
 
 $$ \begin{aligned}
-g2(U) & = \frac{4}{3} \left(1 + U^4 - \lambda + \lambda^2 - 2 U^2 (1 + \lambda)\right)~, \\
-g3(U) & = -\frac{4}{27} \left(-2 + 2 U^6 + 3 \lambda + 3 \lambda^2 - 2 \lambda^3 - 6 U^4 (1 + \lambda) + 3 U^2 (2 + \lambda + 2 \lambda^2)\right)~.
+g_2(U) & = \frac{4}{3} \left(1 + U^4 - \lambda + \lambda^2 - 2 U^2 (1 + \lambda)\right)~, \\
+g_3(U) & = -\frac{4}{27} \left(-2 + 2 U^6 + 3 \lambda + 3 \lambda^2 - 2 \lambda^3 - 6 U^4 (1 + \lambda) + 3 U^2 (2 + \lambda + 2 \lambda^2)\right)~.
 \end{aligned}$$
 
 Here $\lambda$ is another complex parameter. We can then compute the discriminant $\Delta$ as a function of $U$ and $\lambda$, which will be a quartic polynomial in $U$, whose roots we can find analytically:
